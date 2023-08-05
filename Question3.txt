@@ -1,0 +1,20 @@
+How would you respond and resolve an incident where you have utilization imbalance in your cluster where one node is critically overloaded?
+
+A utilization imbalance in a cluster means that the resources (e.g., CPU, memory, disk, network) of one or more nodes are being used significantly more than the others. 
+
+So in the case of one node being critically overloaded, it means that the resources on that node are being fully utilized.
+
+It can result to complete failure of that node, slow down the performance of that node or cause system instability.
+
+SOLUTION:
+The first step is to identify the cause of the issue which can be done by examining the logs of that affected node and the application running on it.
+
+If the issue is due to a misconfigured application or a bug in the code, I would fix the issue and deploy a new version of the application to the cluster.
+
+If the issue is due to increased traffic, I would consider scaling up the node to handle the increased load. This can be done by modifying the node's instance type or by adding more nodes to the cluster.
+
+If scaling up the node is not feasible or does not resolve the issue, I would consider using horizontal pod autoscaling to automatically scale the number of pods in the cluster based on CPU or memory usage.
+
+Once the issue is resolved, I would monitor the cluster closely to ensure that the issue does not recur and take steps to prevent similar incidents in the future, such as implementing automated scaling or improving application performance. 
+
+
